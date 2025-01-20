@@ -31,6 +31,18 @@ line-height: 25px;
   padding: 10px;
 }
 
+.image {
+    text-align: center;
+}
+
+.image img {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image fits within the given dimensions without distortion */
+    border: 1px solid #ddd; /* Optional: Add a border for better visuals */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
 header {
     background-image: url('images/uu.png');
     background-repeat: no-repeat;
@@ -78,6 +90,21 @@ li a {
     background-color: #fff;
     text-decoration: none;;
 }
+.add-cart {
+    height:10px;
+    display: block; /* Ensures the button takes up its own block space */
+    margin: 20px auto; /* Centers the button horizontally */
+    font-size: 16px; /* Downsize font for a cleaner look */
+    border: none; /* Optional: Remove border */
+    border-radius: 5px; /* Optional: Rounded edges for a modern look */
+    background-color: #007BFF; /* Set button color */
+    color: white; /* Button text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+.add-cart:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
 
 .cart ion-icon {
    vertical-align: bottom;
@@ -112,22 +139,26 @@ li a {
     position: relative;
 }
 
-
 .add-cart {
-    position: absolute;
-	margin-right: 20px;
-    margin-left: 20px;
-    width: 140px;
-    background-color: darkgrey;
-    transition: all 0.3s ease-in-out;
-    opacity: 0;
-	color: white;
-    cursor: pointer;
-    text-align: center;
-	text-decoration: none;
-	vertical-align: baseline;
-	border-radius: 9px;
+    display: inline-block; /* Ensure the button is inline but can be centered */
+    width: 150px; /* Set the width to 150px */
+    height: 50px; /* Set the height to 50px */
+    background-color: #ccc;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 10px;
+    line-height: 50px; /* Vertically align the text */
+    text-align: center; /* Center text horizontally inside the button */
 }
+
+.add-cart:hover {
+    background-color: #bbb;
+}
+
 
 .image .cart1,
 .image .cart2,
