@@ -440,3 +440,10 @@ li a {
     align-items: left;
     gap: 20px; /* Adds spacing between elements */
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
